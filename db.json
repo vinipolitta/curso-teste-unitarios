@@ -1,0 +1,19 @@
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+  "users": [
+    {
+      "id": 1,
+      "nome": "vinicius",
+      "email": "vinicius@gmail.com",
+      "age": 18
+    },
+    {
+      "id": 2,
+      "nome": "Santos",
+      "email": "santos@gmail.com",
+      "age": 30
+    }
+  ]
+}
