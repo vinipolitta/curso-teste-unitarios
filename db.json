@@ -1,19 +1,37 @@
 {
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" },
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
   "users": [
     {
       "id": 1,
-      "nome": "vinicius",
-      "email": "vinicius@gmail.com",
-      "age": 18
+      "name": "Vinicius Politta dos Santos",
+      "email": "nayelen.kretli1@gmail.com",
+      "age": "21"
     },
     {
-      "id": 2,
-      "nome": "Santos",
-      "email": "santos@gmail.com",
-      "age": 30
+      "id": 0.7355082676604179,
+      "name": "Politta",
+      "age": 39
+    },
+    {
+      "id": 0.8660304938666026,
+      "name": "Politta",
+      "age": 39
     }
   ]
 }

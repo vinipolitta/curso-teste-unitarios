@@ -10,10 +10,12 @@ import { StubComponent } from './components/stub/stub.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
 import { SpyonComponent } from './components/spyon/spyon.component';
+import { RequestComponent } from './components/request/request.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, RouterModule],
+  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, RouterModule, ReactiveFormsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -12,4 +12,8 @@ export class MyServiceService {
   getUsers() {
     return this.http.get(`${this.url}/users`);
   }
+
+  getUserById(id) {
+    return this.http.get(`${this.url}/users/${id}`)
+  }
 }

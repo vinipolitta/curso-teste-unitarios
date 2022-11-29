@@ -1,0 +1,35 @@
+<p>request works!</p>
+<!-- <button (click)="getUserById(1)">Get by id</button> -->
+<button (click)="getUsers()">Get Users</button>
+
+<br />
+<form action="">
+  <input
+    type="text"
+    [(ngModel)]="name"
+    name="name"
+    placeholder="Digite o Nome"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <input
+    type="text"
+    [(ngModel)]="email"
+    email="email"
+    placeholder="Digite o E-mail"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <input
+    type="text"
+    [(ngModel)]="age"
+    name="age"
+    placeholder="Insira a Idade"
+    [ngModelOptions]="{ standalone: true }"
+  />
+
+  <br />
+  <br />
+  <!-- <button (click)="postUser()">Fazer chamada POST</button> -->
+  <!-- <button (click)="putUser()">Fazer chamada PUT</button> -->
+  <!-- <button (click)="deleteUser(0.5528914590429486)">Fazer delete user</button> -->
+  <button (click)="getUsersWhithHeaders()"> Fazer requisicao GET com headers</button>
+</form>

@@ -16,7 +16,7 @@ const routes: Routes = [
   //   component: StubComponent,
   //   children: [{ path: 'home', component: HomeComponent }],
   // },
-  { path: '**', component: SpyonComponent },
+  // { path: '**', component: SpyonComponent },
 ];
 
 @NgModule({
