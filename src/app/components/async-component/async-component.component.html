@@ -1,0 +1,11 @@
+<p>async-component works!</p>
+<button (click)="getUsers()">Fazer get Async</button>
+<button (click)="getUsersWhithPromise()">Fazer get Async promisse</button>
+
+<br>
+<br>
+
+<div *ngIf="isLogged" class="logged">Logado</div>
+<div *ngIf="!isLogged" class="logged-out">Deslogado</div>
+
+<button (click)="isAuthenticaded()">Logar no Sistema</button>

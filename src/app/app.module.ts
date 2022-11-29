@@ -12,9 +12,10 @@ import { RouterModule } from '@angular/router';
 import { SpyonComponent } from './components/spyon/spyon.component';
 import { RequestComponent } from './components/request/request.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AsyncComponentComponent } from './components/async-component/async-component.component';
 
 @NgModule({
-  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent],
+  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent, AsyncComponentComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, RouterModule, ReactiveFormsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
