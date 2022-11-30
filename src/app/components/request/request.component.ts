@@ -11,6 +11,12 @@ export class RequestComponent implements OnInit {
   name: string;
   email: string;
   age: number;
+  data: Object;
+  dataById: Object;
+  putUsers: Object;
+  dataPostUser: Object;
+  dataDelete: Object;
+  dataHeaders: Object;
 
   constructor(private service: HttpService) {}
 
@@ -18,13 +24,13 @@ export class RequestComponent implements OnInit {
 
   getUserById(id: number) {
     this.service.getUserById(id).subscribe((res) => {
-      console.log(res);
+      this.dataById = res;
     });
   }
 
   getUsers() {
     this.service.getUsers().subscribe((res) => {
-      console.log(res);
+      this.data = res;
     });
   }
 
@@ -38,30 +44,35 @@ export class RequestComponent implements OnInit {
 
     this.service.postUser(user).subscribe((res) => {
       console.log(res);
+      this.dataPostUser = res
     });
   }
 
-  putUser() {
+  putUser(id:number) {
     const user = {
       id: Math.random(),
       name: this.name,
       email: this.email,
       age: this.age,
     };
-    this.service.putUser(user, 1).subscribe((res) => {
+    this.service.putUser(user, id).subscribe((res) => {
       console.log(res);
+      this.putUsers = res;
+
     });
   }
 
   deleteUser(id: number) {
     this.service.deleteUser(id).subscribe((res) => {
       console.log(res);
+      this.dataDelete = res;
     });
   }
 
   getUsersWhithHeaders() {
     this.service.getUsersWhithHeaders().subscribe((res) => {
       console.log(res);
+      this.dataHeaders = res;
     });
   }
 }

@@ -13,9 +13,14 @@ import { SpyonComponent } from './components/spyon/spyon.component';
 import { RequestComponent } from './components/request/request.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AsyncComponentComponent } from './components/async-component/async-component.component';
+import { TestingComponentsComponent } from './components/testing-components/testing-components.component';
+import { FixtureDetectChangeComponent } from './components/fixture-detect-change/fixture-detect-change.component';
+import { AutoDetectChangeComponent } from './components/auto-detect-change/auto-detect-change.component';
+import { FillFormComponent } from './components/fill-form/fill-form.component';
+import { InputOutputComponent } from './components/input-output/input-output.component';
 
 @NgModule({
-  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent, AsyncComponentComponent],
+  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent, AsyncComponentComponent, TestingComponentsComponent, FixtureDetectChangeComponent, AutoDetectChangeComponent, FillFormComponent, InputOutputComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, RouterModule, ReactiveFormsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

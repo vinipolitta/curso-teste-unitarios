@@ -4,6 +4,14 @@
 <app-mock-service></app-mock-service> -->
 <!-- <app-stub></app-stub> -->
 <!-- <app-request></app-request> -->
-<app-async-component></app-async-component>
+<!-- <app-async-component></app-async-component> -->
+<!-- <app-testing-components></app-testing-components> -->
+<!-- <app-request></app-request> -->
+<!-- <app-auto-detect-change></app-auto-detect-change> -->
+<!-- <app-fill-form></app-fill-form> -->
+<app-input-output
+  [user]="user"
+  (userMessage)="getUserMessage($event)">
+</app-input-output>
 
 <router-outlet></router-outlet>

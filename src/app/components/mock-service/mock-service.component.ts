@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mock-service.component.scss'],
 })
 export class MockServiceComponent implements OnInit {
+  data: any;
   constructor(private service: MyServiceService) {}
 
   ngOnInit(): void {}
@@ -14,6 +15,7 @@ export class MockServiceComponent implements OnInit {
   getUsers() {
     this.service.getUsers().subscribe((res) => {
       console.log(res);
+      this.data = res;
     });
   }
 }
