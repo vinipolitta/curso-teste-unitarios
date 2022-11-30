@@ -18,11 +18,49 @@ import { FixtureDetectChangeComponent } from './components/fixture-detect-change
 import { AutoDetectChangeComponent } from './components/auto-detect-change/auto-detect-change.component';
 import { FillFormComponent } from './components/fill-form/fill-form.component';
 import { InputOutputComponent } from './components/input-output/input-output.component';
+import { TestingPipesDirectiveRouteComponent } from './components/testing-pipes-directive-route/testing-pipes-directive-route.component';
+import { HttpPipe } from './pipes/http.pipe';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TestingRouteComponent } from './components/testing-route/testing-route.component';
+import { ExtratoComponent } from './components/extrato/extrato.component';
+import { TestingDirectiveComponent } from './components/testing-directive/testing-directive.component';
+import { HoverFocusDirective } from './directive/hover-focus.directive';
 
 @NgModule({
-  declarations: [AppComponent, MatchersJasmineComponent, MockServiceComponent, StubComponent, HomeComponent, SpyonComponent, RequestComponent, AsyncComponentComponent, TestingComponentsComponent, FixtureDetectChangeComponent, AutoDetectChangeComponent, FillFormComponent, InputOutputComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, RouterModule, ReactiveFormsModule, FormsModule],
+  declarations: [
+    AppComponent,
+    MatchersJasmineComponent,
+    MockServiceComponent,
+    StubComponent,
+    HomeComponent,
+    SpyonComponent,
+    RequestComponent,
+    AsyncComponentComponent,
+    TestingComponentsComponent,
+    FixtureDetectChangeComponent,
+    AutoDetectChangeComponent,
+    FillFormComponent,
+    InputOutputComponent,
+    TestingPipesDirectiveRouteComponent,
+    HttpPipe,
+    LoginComponent,
+    DashboardComponent,
+    TestingRouteComponent,
+    ExtratoComponent,
+    TestingDirectiveComponent,
+    HoverFocusDirective,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule,
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [],
 })
 export class AppModule {}
